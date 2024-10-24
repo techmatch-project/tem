@@ -1,0 +1,1012 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Email Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+
+    <style>
+      
+* {
+margin: 10px;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+}
+
+
+.hero {
+    background: url('img/blob1.png') no-repeat center center;
+    color: white;
+    padding: 100px 0;
+    position: relative;
+    background-size: cover;
+    width: 100%;
+}
+
+
+.hero .content {
+background-color: rgba(0, 0, 0, 0.5);
+padding: 40px;
+display: inline-block;
+}
+
+.hero .tagline {
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 15px;
+display: block;
+}
+
+.hero h1 {
+font-size: 40px;
+margin-bottom: 15px;
+}
+
+.hero p {
+font-size: 16px;
+margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+    .hero h1 {
+        font-size: 36px; /* Slightly smaller heading for medium screens */
+    }
+
+    .hero p {
+        font-size: 15px; /* Slightly smaller paragraph text */
+    }
+}
+
+@media (max-width: 992px) {
+    .hero {
+        padding: 80px 15px; /* Adjusted padding for medium screens */
+    }
+
+    .hero h1 {
+        font-size: 32px; /* Smaller heading for smaller screens */
+    }
+
+    .hero p {
+        font-size: 14px; /* Smaller paragraph text */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 10px; /* Further adjust padding for mobile */
+        text-align: center; /* Center align text */
+    }
+
+    .hero .content {
+        padding: 30px; /* Adjust padding for content */
+    }
+
+    .hero h1 {
+        font-size: 28px; /* Smaller heading for mobile */
+    }
+
+    .hero p {
+        font-size: 13px; /* Smaller paragraph text */
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 40px 10px; /* Further adjust padding for very small screens */
+    }
+
+    .hero .tagline {
+        font-size: 16px; /* Smaller tagline for very small screens */
+    }
+
+    .hero h1 {
+        font-size: 24px; /* Even smaller heading for very small screens */
+    }
+
+    .hero p {
+        font-size: 12px; /* Smaller paragraph text */
+    }
+}
+
+
+.about {
+padding: 60px 0;
+background-color: #fff;
+position: relative;
+display: flex;
+
+align-items: center; /* Center content horizontally */
+justify-content: center;
+overflow: hidden;
+text-align: center; /* Ensures text is centered */
+}
+
+.about .container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+position: relative;
+z-index: 1;
+
+}
+
+/* Title styling */
+.title h3 {
+font-size: 36px;
+color: #333;
+font-weight: 600;
+text-transform: uppercase;
+text-align: center;
+margin-bottom: 30px;
+letter-spacing: 2px;
+z-index: 2;
+position: relative;
+}
+
+.title h3::after {
+content: '';
+width: 80px;
+height: 4px;
+background-color: #ff7e5f;
+display: block;
+margin: 10px auto;
+border-radius: 2px;
+}
+
+/* Row styling */
+.about .row {
+display: flex;
+flex-direction: column;
+align-items: center;
+z-index: 2;
+position: relative;
+}
+
+/* Text styling */
+.about-text {
+max-width: 800px;
+margin-top: 20px;
+text-align: center; /* Ensures the text inside the about-text is centered */
+}
+
+.about-text p {
+font-size: 18px;
+color: #666;
+line-height: 1.6;
+margin: 0 auto; /* Centers the text container */
+padding: 0; /* Remove padding that could cause misalignment */
+}
+
+/* Blob Styling */
+.blob-wrapper {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+z-index: 0;
+}
+
+.blob {
+position: absolute;
+z-index: 1;
+}
+
+.blob1 {
+width: 400px;
+height: 300px;
+top: -100px;
+left: -30px;
+}
+
+.blob2 {
+width: 250px;
+height: 300px;
+bottom: -60px;
+right: -10px;
+}
+
+/* Responsive styling */
+@media (max-width: 1200px) {
+.about .container {
+    padding: 0 15px; /* Adjust padding for smaller screens */
+}
+
+.title h3 {
+    font-size: 32px; /* Slightly smaller title */
+}
+}
+
+@media (max-width: 992px) {
+.title h3 {
+    font-size: 28px; /* Smaller title for medium screens */
+}
+
+.about-text p {
+    font-size: 16px; /* Slightly smaller text */
+}
+}
+
+@media (max-width: 768px) {
+.row {
+    text-align: center;
+}
+
+.about-text p {
+    padding-left: 0; /* Reset padding */
+    font-size: 16px; /* Adjust font size for mobile */
+}
+
+.blob1 {
+    width: 250px;
+    height: 250px;
+    top: -50px;
+    left: -100px;
+}
+
+.blob2 {
+    width: 200px;
+    height: 200px;
+    bottom: -50px;
+    right: -50px;
+}
+}
+
+@media (max-width: 576px) {
+.title h3 {
+    font-size: 24px; /* Even smaller title for very small screens */
+}
+
+.about-text p {
+    font-size: 14px; /* Smaller text for mobile */
+}
+
+.blob1 {
+    width: 200px;
+    height: 200px;
+    top: -30px;
+    left: -80px;
+}
+
+.blob2 {
+    width: 150px;
+    height: 150px;
+    bottom: -30px;
+    right: -30px;
+}
+}
+
+/* Service box styling */
+/* Updated Services Styling */
+.services {
+padding: 100px 0;
+position: relative;
+}
+
+.services .row{
+gap: 30px;
+}
+
+/* .services::before, .services::after {
+content: '';
+position: absolute;
+background: #f0f0f5; 
+z-index: -1;
+border-radius: 50%;
+} */
+
+.services::before {
+width: 200px;
+height: 200px;
+top: -100px;
+left: -100px;
+}
+
+.services::after {
+width: 150px;
+height: 150px;
+bottom: -75px;
+right: -75px;
+}
+
+.service-box {
+border-radius: 20px;
+padding: 0px 20px;
+margin: 20px 0;
+text-align: center;
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+transition: transform 0.4s ease, box-shadow 0.4s ease;
+width: 31%;
+position: relative;
+overflow: hidden;
+background-color: white;
+gap: 30px;
+}
+
+.service-box:hover {
+transform: translateY(-10px);
+box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.service-box::before {
+content: '';
+position: absolute;
+top: -30px;
+left: -30px;
+width: 120px;
+height: 120px;
+background: #f4c4f3; /* Blob color */
+border-radius: 50%;
+z-index: -1;
+transition: all 0.4s ease-in-out;
+}
+
+.service-box:hover::before {
+transform: scale(1.5);
+}
+
+.service-box::after {
+content: '';
+position: absolute;
+bottom: -40px;
+right: -40px;
+width: 90px;
+height: 90px;
+background: #90e0ef; /* Blob color */
+border-radius: 50%;
+z-index: -1;
+transition: all 0.4s ease-in-out;
+}
+
+.service-box:hover::after {
+transform: scale(1.5);
+}
+
+/* Icon Styling */
+.service-icon {
+font-size: 50px;
+margin-bottom: 20px;
+color: #495057;
+transition: color 0.4s ease;
+}
+
+.service-box:hover .service-icon {
+color: #fff;
+}
+
+/* Service Title */
+.service-box h4 {
+font-size: 24px;
+font-weight: 700;
+margin-bottom: 20px;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+/* Creative li bullets */
+.service-box ul {
+list-style-type: none;
+font-size: 16px;
+line-height: 2;
+padding-left: 0;
+text-align: left;
+}
+
+.service-box ul li {
+position: relative;
+padding-left: 30px;
+transition: all 0.3s ease;
+}
+
+.service-box ul li::before {
+content: '\f058'; /* FontAwesome checkmark icon */
+font-family: 'Font Awesome 5 Free';
+font-weight: 900;
+position: absolute;
+left: 0;
+top: 0;
+color: #007bff;
+font-size: 14px;
+transition: color 0.3s ease;
+}
+
+.service-box ul li:hover::before {
+color: #ff7b54;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.service-box {
+    width: 48%;
+}
+}
+
+@media (max-width: 576px) {
+.service-box {
+    width: 100%;
+    margin-bottom: 30px;
+}
+}
+
+
+/* Container for the whole approach section */
+.approach-container {
+text-align: center;
+padding: 60px 20px;
+
+}
+
+/* Title styling */
+.approach-container .title h3 {
+font-size: 36px;
+color: #333;
+margin-bottom: 40px;
+text-transform: uppercase;
+}
+
+/* Step container */
+.approach-steps {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+/* Each step in the approach */
+.step {
+width: 150px;
+text-align: center;
+}
+
+/* Circle container to hold the circle and arrow */
+.circle-container {
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+/* Circle styling */
+.circle {
+background-color: #ff9800;
+color: white;
+font-size: 24px;
+font-weight: bold;
+line-height: 80px;
+width: 80px;
+height: 80px;
+border-radius: 50%;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+margin-bottom: 15px;
+}
+
+/* Arrow under the circle */
+.arrow {
+width: 0;
+height: 0;
+border-left: 15px solid transparent;
+border-right: 15px solid transparent;
+border-top: 15px solid #ff9800;
+margin-top: 10px;
+}
+
+/* Step content */
+.step-content {
+margin-top: 20px;
+padding: 0 10px;
+text-align: left;
+}
+
+/* Heading for each step */
+.step-content h3 {
+font-size: 18px;
+margin-bottom: 10px;
+color: #ff9800;
+font-weight: bold;
+}
+
+/* Paragraph for each step */
+.step-content p {
+font-size: 14px;
+color: #555;
+text-align: left;   /* Aligns text to the left for consistent flow */
+margin: 0;         /* Remove extra margins */
+}
+
+@media (max-width: 992px) {
+    .approach-container {
+        padding: 40px 15px; /* Adjust padding for medium screens */
+    }
+
+    .approach-steps {
+        justify-content: center; /* Center steps */
+    }
+
+    .step {
+        width: 120px; /* Adjust width for medium screens */
+    }
+
+    .step-content h3 {
+        font-size: 16px; /* Adjust heading size */
+    }
+
+    .step-content p {
+        font-size: 13px; /* Adjust paragraph size */
+    }
+}
+
+@media (max-width: 768px) {
+    .approach-steps {
+        flex-direction: column; /* Stack steps vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .step {
+        margin-bottom: 40px; /* Space below each step */
+        width: auto; /* Allow width to adjust */
+    }
+
+    .circle-container {
+        margin-bottom: 20px; /* Space below circles */
+    }
+
+    .step-content h3 {
+        font-size: 18px; /* Heading size for mobile */
+    }
+
+    .step-content p {
+        font-size: 14px; /* Paragraph size for mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    .approach-container {
+        padding: 30px 10px; /* Further adjust padding for very small screens */
+    }
+
+    .title h3 {
+        font-size: 24px; /* Smaller title size */
+    }
+
+    .circle {
+        font-size: 20px; /* Smaller font size for circle number */
+        line-height: 60px; /* Adjust line height */
+        width: 60px; /* Smaller circle */
+        height: 60px; /* Smaller circle */
+    }
+
+    .arrow {
+        border-top-width: 10px; /* Smaller arrow */
+    }
+
+    .step-content h3 {
+        font-size: 16px; /* Heading size for very small screens */
+    }
+
+    .step-content p {
+        font-size: 12px; /* Smaller paragraph size */
+    }
+}
+
+
+
+.content-wrapper {
+min-height: 100%;
+position: relative;
+}
+
+/* Overall Form Styling */
+/* Form Container */
+.form {
+max-width: 600px;
+margin: 50px auto;
+padding: 30px;
+background-color: #ffffff;
+border-radius: 10px;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+font-family: 'Helvetica Neue', sans-serif;
+color: #333;
+}
+
+/* Form Title */
+.form h2 {
+font-size: 1.8rem;
+margin-bottom: 20px;
+text-align: center;
+color: #333;
+font-weight: bold;
+letter-spacing: 1px;
+}
+
+/* Input Fields */
+.form p {
+margin-bottom: 20px;
+position: relative;
+font-size: 1rem;
+color: #555;
+}
+
+.form input, .form textarea {
+width: 100%;
+padding: 15px;
+border: 1px solid #ddd;
+border-radius: 8px;
+background-color: #f9f9f9;
+transition: all 0.3s ease;
+}
+
+.form input:focus, .form textarea:focus {
+border-color: #4a90e2;
+background-color: #fff;
+outline: none;
+box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+}
+
+/* Textarea Styling */
+textarea {
+height: 150px;
+resize: none;
+}
+
+/* Submit Button */
+button {
+width: 100%;
+padding: 15px;
+background-color: #4a90e2;
+color: #fff;
+border: none;
+border-radius: 50px;
+font-size: 1.2rem;
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.2s;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Contact Info Section */
+.contact-info {
+margin-top: 30px;
+text-align: center;
+font-size: 1rem;
+color: #666;
+}
+
+.contact-info span {
+margin-right: 10px;
+color: #4a90e2;
+}
+
+/* Icons Styling */
+.fa {
+margin-right: 10px;
+font-size: 1.2rem;
+vertical-align: middle;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+.form {
+  padding: 20px;
+}
+
+button {
+  font-size: 1rem;
+  padding: 12px;
+}
+}
+
+
+
+.regards {
+padding: 20px;
+font-family: 'Arial', sans-serif;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+margin-top: 20px;
+}
+
+.regards h6 {
+margin: 5px 0;
+color: #333;
+font-size: 16px;
+}
+
+.regards .name {
+font-weight: bold;
+font-size: 18px;
+}
+
+.regards .position {
+color: #555;
+}
+
+.regards .company {
+color: #0066cc;
+}
+
+.regards .contact,
+.regards .email {
+font-size: 15px;
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 4px;
+    display: flex;
+    gap: 0; /* Remove any gaps */
+}
+
+.social-icons li {
+    display: inline;
+    margin: 0; /* Remove margin */
+}
+
+.social-icons li a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons li a img:hover {
+    transform: scale(1.2);
+}
+
+    </style>
+  </head>
+  <body>
+    <!-- Main Content Section -->
+     <div id="home">
+      <div class="container">
+    <section class="hero">
+           <div class="content">
+            <span class="tagline">Smart Solutions</span>
+            <h1>Your Vision, Our Technology.</h1>
+            <p>SensixTech delivers innovative, future-ready solutions, empowering businesses to thrive globally.</p>  
+        </div>
+    </section>
+      </div>
+     </div>
+
+     <!--about ua section-->
+     <div id="aboutus">
+      <section class="about">
+              <!-- Blob SVGs -->
+              <div class="blob-wrapper">
+                  <svg class="blob blob1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#f4c4f3" d="M39.5,-51.9C51.5,-43.6,60.8,-31,65.5,-16.7C70.2,-2.3,70.4,13.8,63.6,26.2C56.9,38.5,43.3,47,29.4,51.5C15.4,56,0.9,56.4,-13.2,54.1C-27.3,51.7,-41,46.7,-50.6,36.8C-60.2,26.8,-65.7,12,-66.6,-3.4C-67.4,-18.8,-63.7,-35,-53.9,-43.9C-44,-52.8,-28,-54.5,-13.6,-55.8C0.8,-57.2,16.1,-58.2,39.5,-51.9Z" transform="translate(100 100)" />
+                  </svg>
+                  <svg class="blob blob2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#90e0ef" d="M36.1,-63.4C48.5,-57.2,60.9,-48,64.3,-36.4C67.7,-24.9,62.1,-10.9,58.8,3.6C55.4,18.1,54.3,32.9,47.2,41.7C40.1,50.6,27,53.5,14.7,56.8C2.3,60.1,-9.2,63.8,-20.4,62.3C-31.6,60.9,-42.5,54.3,-48.1,44.4C-53.8,34.5,-54.2,21.2,-57.6,8.5C-61,-4.2,-67.4,-16.2,-66.3,-27.1C-65.2,-38,-56.5,-47.9,-45.9,-53.5C-35.2,-59.2,-22.6,-60.7,-10.5,-61.5C1.7,-62.3,33.6,-62.7,36.1,-63.4Z" transform="translate(100 100)" />
+                  </svg>
+              </div>
+            
+              <div class="row">
+                  <div class="container">
+                    <div class="title">
+                      <h3>About Us</h3>
+                  </div>
+                      <div class="col-sm-12 about-text">
+                          <p>At<a href="https://sensixtech.com">Sensix Tech,</a>we pride ourselves on offering dynamic IT solutions tailored to your specific requirements. Our flexible approach allows us to adjust to your evolving needs, whether it's comprehensive IT infrastructure support, strategic consultancy, or software development.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+    <!--services-->
+    <div id="servicess">
+          <section class="services">
+      <div class="container">
+        <div class="title">
+          <h3>Our Services</h3>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 service-box">
+            <div class="service-icon">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <h4>Custom Software Development </h4>
+           <ul>
+            <li>Enterprise Solutions</li>
+            <li>
+              Security Software</li>
+            <li>Gaming and Entertainment</li>
+            <li>Data Management and Analytics</li>
+           </ul>
+          </div>
+
+          <div class="col-sm-4 service-box">
+            <div class="service-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h4>Mobile App Design and Development </h4>
+            <ul>
+              <li>Custom Mobile App Design</li>
+              <li>
+                iOS app development services</li>
+              <li>
+                Mobile application design services</li>
+              <li>mobile app development</li>
+  
+             </ul>
+          </div>
+
+         
+
+
+          <div class="col-sm-4 service-box">
+            <div class="service-icon">
+              <i class="fas fa-cloud"></i>
+            </div>
+            <h4>Website Development Services</h4>
+            <ul>
+              <li>Front-End Development</li>
+              <li>
+                Back-End Development</li>
+              <li>API Integration</li>
+              <li>Quality Assurance and Testing</li>
+             </ul>
+          </div>
+         
+
+
+  <div class="col-sm-4 service-box">
+            <div class="service-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h4>Digital Marketing Services</h4>
+            <ul>
+              <li>Search Engine Optimization</li>
+              <li>
+                Social Media Management</li>
+              <li>Content Creation</li>
+              <li>Pay-Per-Click (PPC) Advertising</li>
+             </ul>
+          </div> 
+
+
+
+
+          <div class="col-sm-4 service-box">
+            <div class="service-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h4>Best UI/UX Design Services </h4>
+            <ul>
+              <li>Wireframing and Prototyping</li>
+              <li>
+                User Interface UI</li>
+              <li>
+                User Experience UX</li>
+              <li>Continuous Improvement</li>
+  
+             </ul>
+          </div>
+          <div class="col-sm-4 service-box">
+            <div class="service-icon">
+              <i class="fas fa-sync-alt"></i>
+            </div>
+            <h4>IT Management Services </h4>
+            <ul>
+              <li>Bug fixes and Issue Resolution</li>
+              <li>
+                Software Upgrades and Updates</li>
+              <li>
+                Security Management</li>
+              <li>Data Backup</li>
+  
+             </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+
+    <!--approach section-->
+    <div class="approach-container">
+      <div class="title">
+        <h3>Our Approach</h3>
+      </div>
+      <div class="approach-steps">
+        <div class="step">
+          <div class="circle-container">
+            <div class="circle">01</div>
+            <div class="arrow"></div>
+          </div>
+          <div class="step-content">
+            <h3>Discovery Phase</h3>
+            <p>Define project goals and requirements through research and consultations with stakeholders for clarity.</p>
+          </div>
+        </div>
+    
+        <div class="step">
+          <div class="circle-container">
+            <div class="circle">02</div>
+            <div class="arrow"></div>
+          </div>
+          <div class="step-content">
+            <h3>Design & Development</h3>
+            <p>Build the solution using gathered requirements and design specifications for effective implementation.</p>
+          </div>
+        </div>
+    
+        <div class="step">
+          <div class="circle-container">
+            <div class="circle">03</div>
+            <div class="arrow"></div>
+          </div>
+          <div class="step-content">
+            <h3>Maintenance</h3>
+            <p>Maintain and enhance the solution through user feedback and continuous performance monitoring</p>
+          </div>
+        </div>
+    
+        <div class="step">
+          <div class="circle-container">
+            <div class="circle">04</div>
+            <div class="arrow"></div>
+          </div>
+          <div class="step-content">
+            <h3>Deployment</h3>
+            <p> Release the final solution to the production environment and make it available to users.</p>
+          </div>
+        </div>
+    
+        <div class="step">
+          <div class="circle-container">
+            <div class="circle">05</div>
+            <div class="arrow"></div>
+          </div>
+          <div class="step-content">
+            <h3>Testing and QA</h3>
+            <p>Ensure the solution functions correctly and meets quality standards through rigorous testing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="regards">
+      <div class="container">
+        <h6>With Best Regards,</h6>
+        <h6>Prashant S</h6>
+        <h6>Business Development Manager</h6>
+        <h6>Sensix Tech Pvt Ltd</h6>
+        <h6 style="font-weight: bold;">Mobile No : +91 9372723751</h6>
+        <h6 style="font-weight: bold;">Email Id : <a href="#">sales@sensixtech.com</a></h6>
+        <ul class="social-icons">
+          <li><a href="https://www.facebook.com/people/Sensix-Tech-Pvt-Ltd/61551043373866/"><img src="img/facebook.png" alt="Facebook"></a></li>
+          <li>
+            <a href="https://www.instagram.com/sensix_tech/">
+                <img src="https://drive.google.com/file/d/1r7Ugw3QeSeoxv34uA9THSxogP7Ahkvv2" alt="Instagram">
+            </a>
+        </li>
+        
+          <li><a href="https://x.com/SensixTech92458"><img src="img/linkdn.png" alt="LinkedIn"></a></li>
+        </ul>
+      </div>
+    </section>
+    
+    <script>
+      window.addEventListener('scroll', () => {
+    console.log(window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+    document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight))})
+
+
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
